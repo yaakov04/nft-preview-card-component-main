@@ -1,163 +1,175 @@
 :root {
-  --bgBlue: hsl(217, 54%, 11%);
-  --cardBgBlue: hsl(216, 50%, 16%);
-  --white: hsl(0, 0%, 100%);
-  --softBlue: hsl(215, 51%, 70%);
-  --cyan: hsl(178, 100%, 50%);
-  --outfit: "Outfit", sans-serif;
+    --bgBlue: hsl(217, 54%, 11%);
+    --cardBgBlue: hsl(216, 50%, 16%);
+    --white: hsl(0, 0%, 100%);
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --outfit: "Outfit", sans-serif;
 }
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%;
+    box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 * {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
-  background-color: var(--bgBlue);
-  font-size: 1.8rem;
-  font-family: var(--outfit);
+    background-color: var(--bgBlue);
+    font-size: 1.8rem;
+    font-family: var(--outfit);
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
+
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
 }
 
 .icon-svg {
-  width: 1.2rem;
-  display: inline-block;
+    width: 1.2rem;
+    display: inline-block;
 }
 
 .icon-svg--w20 {
-  width: 2rem;
+    width: 2rem;
 }
 
 .avatar-image {
-  width: 4rem;
-  display: inline-block;
+    width: 4rem;
+    display: inline-block;
 }
 
 .avatar-image img {
-  border-radius: 50%;
-  border: solid 0.2rem var(--white);
+    border-radius: 50%;
+    border: solid 0.2rem var(--white);
 }
 
 .line {
-  width: 100%;
-  height: 0.2rem;
-  border-top: solid 0.1rem hsl(215, 32%, 27%);
-  margin: 2rem 0;
+    width: 100%;
+    height: 0.2rem;
+    border-top: solid 0.1rem hsl(215, 32%, 27%);
+    margin: 2rem 0;
 }
 
 .card {
-  width: 37.5rem;
-  background-color: var(--cardBgBlue);
-  padding: 2rem;
-  border-radius: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 80%;
+    background-color: var(--cardBgBlue);
+    padding: 2.5rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 35rem;
 }
 
 .card__image {
-  border-radius: 2rem;
-  overflow: hidden;
-  position: relative;
-  width: 33.5rem;
-  height: 33.5rem;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
 }
+
+.card__image img {
+    display: block;
+}
+
 .card__image::before {
-  content: "";
-  background-color: var(--cyan);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.2s ease;
+    content: "";
+    background-color: var(--cyan);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease;
 }
+
 .card__image:hover::before {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 .card__image::after {
-  content: "";
-  background-image: url(../images/icon-view.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 20%;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.2s ease;
+    content: "";
+    background-image: url(../images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease;
 }
 
-.card__image:hover::after{
-opacity:1;
+.card__image:hover::after {
+    opacity: 1;
 }
 
 .card__headline {
-  color: var(--white);
-  margin: 2rem 0;
-  transition: color 0.2s ease;
+    color: var(--white);
+    margin: 2rem 0;
+    transition: color 0.2s ease;
 }
 
 .card__headline:hover {
-  color: var(--cyan);
+    color: var(--cyan);
 }
 
 .card__paragraph {
-  color: var(--softBlue);
-  margin: 2rem 0;
-  font-weight: 300;
-  line-height: 1.5;
+    color: var(--softBlue);
+    margin: 2rem 0;
+    font-weight: 300;
+    line-height: 1.5;
 }
 
 .nft-info {
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
 }
 
 .nft-info__price {
-  color: var(--cyan);
-  font-weight: 600;
+    color: var(--cyan);
+    font-weight: 600;
 }
 
 .nft-info__date {
-  color: var(--softBlue);
+    color: var(--softBlue);
 }
 
 .card__footer {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
 }
 
 .paragraph-footer {
-  color: var(--softBlue);
-  margin-left: 2rem;
+    color: var(--softBlue);
+    margin-left: 2rem;
 }
+
 .paragraph-footer__name {
-  color: var(--white);
-  transition: color 0.2s ease;
+    color: var(--white);
+    transition: color 0.2s ease;
 }
 
 .paragraph-footer__name:hover {
-  color: var(--cyan);
+    color: var(--cyan);
+}
+
+.attribution {
+    padding-top: 2.5rem;
 }

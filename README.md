@@ -26,13 +26,13 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
-
-![](./screenshot.jpg)
+![](https://imgur.com/3LzHc7I)
+![](https://imgur.com/lNO0sJQ)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Gitghub](https://github.com/yaakov04/nft-preview-card-component-main)
+- Live Site URL: [Github Pages](https://yaakov04.github.io/nft-preview-card-component-main/)
 
 ## My process
 
